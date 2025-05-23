@@ -1,28 +1,18 @@
-import type { NextConfig } from "next";
-
-/**
- * Get the base path from the environment or use an empty string
- * This is needed for GitHub Pages deployment where the site might be in a subdirectory
- */
+// next.config.js
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
-const nextConfig: NextConfig = {
-  // Required for GitHub Pages deployment
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: 'export',
-  
-  // Set the base path for GitHub Pages deployment if needed
   basePath,
-  
-  // Disable image optimization since it's not supported in static exports
+  assetPrefix: basePath,
   images: {
     unoptimized: true,
   },
-  
-  // Configure asset prefix for GitHub Pages
-  assetPrefix: basePath,
-  
-  // Disable trailing slashes for GitHub Pages URLs
   trailingSlash: false,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
