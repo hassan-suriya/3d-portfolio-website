@@ -12,6 +12,7 @@ import ProjectsRoom from './rooms/ProjectsRoom'
 import ContactRoom from './rooms/ContactRoom'
 import FontPreloader from './FontPreloader'
 import { useScrollNavigation } from '@/hooks/useScrollNavigation'
+import ScreenshotButton from './ScreenshotButton'
 
 export type RoomType = 'hero' | 'about' | 'projects' | 'contact'
 
@@ -35,9 +36,11 @@ const Portfolio3D: React.FC = () => {
     onRoomChange: handleRoomChange,
     isTransitioning
   })
-
   return (
     <div className="relative w-full h-screen overflow-hidden">
+      {/* Screenshot Button */}
+      <ScreenshotButton />
+      
       {/* 3D Canvas */}
       <Canvas
         ref={canvasRef}
