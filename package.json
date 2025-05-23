@@ -8,7 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run build && type nul > out/.nojekyll && gh-pages -d out"
+    "clean": "if exist .next rd /s /q .next && if exist out rd /s /q out",
+    "deploy": "npm run clean && npm run build && type nul > out/.nojekyll && gh-pages -d out",
+    "preview": "npx serve out"
   },
   "dependencies": {
     "@react-three/drei": "^10.0.8",
@@ -27,6 +29,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cross-env": "^7.0.3",
     "eslint": "^9",
     "eslint-config-next": "15.1.8",
     "gh-pages": "^6.3.0",

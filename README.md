@@ -38,8 +38,8 @@
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/3d-portfolio.git
-   cd 3d-portfolio
+   git clone https://github.com/yourusername/3d-portfolio-website.git
+   cd 3d-portfolio-website
    ```
 
 2. Install dependencies
@@ -60,7 +60,7 @@ Create a `.env.local` file in the root directory with the following variables:
 
 ```env
 # Only needed for GitHub Pages deployment if your repo is not at the root
-# NEXT_PUBLIC_BASE_PATH=/3d-portfolio
+# NEXT_PUBLIC_BASE_PATH=/3d-portfolio-website
 ```
 
 ## 🖥️ Development
@@ -95,12 +95,12 @@ This project is configured for automatic deployment to GitHub Pages:
 
 1. Push your changes to the `main` branch
 2. GitHub Actions will automatically build and deploy the site
-3. Your portfolio will be available at `https://yourusername.github.io/3d-portfolio`
+3. Your portfolio will be available at `https://yourusername.github.io/3d-portfolio-website`
 
 ### GitHub Workflows
 
 You can view the workflow runs in the Actions tab of your repository:
-`https://github.com/yourusername/3d-portfolio/actions`
+`https://github.com/yourusername/3d-portfolio-website/actions`
 
 The workflow will:
 1. Build your Next.js application
