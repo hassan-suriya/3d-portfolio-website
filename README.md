@@ -7,7 +7,7 @@
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-3.0-38B2AC?style=for-the-badge&logo=tailwind-css)
 
 <p align="center">
-   <img src="github.com/hassan-suriya/3d-portfolio-website/blob/master/public/portolio-screenshot.png?raw=true" alt="Portfolio Screenshot" width="800"/>
+   <img src="https://github.com/hassan-suriya/3d-portfolio-website/blob/master/public/portolio-screenshot.png" alt="Portfolio Screenshot" width="800"/>
 </p>
 
 > **🎨 A modern, interactive 3D portfolio website built with Next.js, Three.js, and TypeScript featuring immersive tech-themed environments.**

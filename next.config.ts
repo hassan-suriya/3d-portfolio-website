@@ -1,11 +1,11 @@
 // next.config.js
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const repo = '3d-portfolio-website'; // Your GitHub repo name
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath,
-  assetPrefix: basePath,
+  basePath: `/${repo}`,
+  assetPrefix: `/${repo}/`,
   images: {
     unoptimized: true,
   },
