@@ -37,8 +37,13 @@ jobs:
         run: npm ci
       - name: Build with Next.js
         run: npm run build
-      - name: Create .nojekyll file
-        run: touch ./out/.nojekyll
+      - name: Fix asset paths for GitHub Pages
+        run: |
+          touch ./out/.nojekyll
+          # Create repo directory if it doesn't exist
+          mkdir -p ./out/3d-portfolio-website
+          # Copy _next directory to fix asset paths
+          cp -r ./out/_next ./out/3d-portfolio-website/ || echo "No _next directory to copy"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
