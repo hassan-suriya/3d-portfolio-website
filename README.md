@@ -12,7 +12,7 @@
 
 > **🎨 A modern, interactive 3D portfolio website built with Next.js, Three.js, and TypeScript featuring immersive tech-themed environments.**
 
-### ✨ [Live Demo](https://yourusername.github.io/3d-portfolio)
+### ✨ [Live Demo](https://hassan-suriya.github.io/3d-portfolio)
 
 ## 💫 Features
 
@@ -121,7 +121,7 @@ Edit the individual room components in `src/components/rooms/` to update content
 
 ## 📝 License
 
-[MIT](LICENSE) © [Your Name]
+[MIT](LICENSE) © Hassan Suriya | ByteForth
 
 ---
 
