@@ -38,7 +38,7 @@
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/3d-portfolio-website.git
+   git clone https://github.com/hassan-suriya/3d-portfolio-website.git
    cd 3d-portfolio-website
    ```
 
@@ -70,7 +70,8 @@ The project follows a structured approach with:
 - `src/components/` - React components including 3D models and UI elements
 - `src/components/rooms/` - Individual portfolio sections
 - `src/hooks/` - Custom React hooks
-- `src/app/` - Next.js App Router pages and layouts
+- `src/pages/` - Next.js Pages Router pages and layouts
+- `src/styles/` - Global CSS styles
 
 ### Key Components:
 
@@ -95,18 +96,29 @@ This project is configured for automatic deployment to GitHub Pages:
 
 1. Push your changes to the `main` branch
 2. GitHub Actions will automatically build and deploy the site
-3. Your portfolio will be available at `https://yourusername.github.io/3d-portfolio-website`
+3. Your portfolio will be available at `https://hassan-suriya.github.io/3d-portfolio-website`
+
+#### Manual Deployment
+
+You can also deploy manually using:
+
+```bash
+npm run deploy
+```
+
+This will build the project and publish it to the `gh-pages` branch.
 
 ### GitHub Workflows
 
 You can view the workflow runs in the Actions tab of your repository:
-`https://github.com/yourusername/3d-portfolio-website/actions`
+`https://github.com/hassan-suriya/3d-portfolio-website/actions`
 
 The workflow will:
 1. Build your Next.js application
-2. Generate static files
-3. Deploy them to GitHub Pages
-4. Make your site available online
+2. Generate static files with the correct basePath
+3. Create a .nojekyll file to ensure underscore files work correctly
+4. Deploy them to GitHub Pages
+5. Make your site available online
 
 ## 🎨 Customization
 

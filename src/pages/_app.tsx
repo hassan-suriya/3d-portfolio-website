@@ -1,6 +1,7 @@
 import { AppProps } from 'next/app';
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import Head from 'next/head';
+import { getBasePath } from '@/utils/paths';
 import '../styles/globals.css';
 
 const geistSans = Geist({
@@ -22,12 +23,11 @@ const inter = Inter({
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <Head>
+    <>      <Head>
         <title>3D Portfolio</title>
         <meta name="description" content="A modern, interactive 3D portfolio website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={getBasePath('/favicon.ico')} />
       </Head>
       <main className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased`}>
         <Component {...pageProps} />
